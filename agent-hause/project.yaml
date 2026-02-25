@@ -1,0 +1,23 @@
+# CRE PROJECT SETTINGS FILE
+
+staging-settings:
+  rpcs:
+    - chain-name: ethereum-testnet-sepolia
+      url: https://ethereum-sepolia-rpc.publicnode.com
+    - chain-name: ethereum-testnet-sepolia
+      url: https://ethereum-sepolia-public.nodies.app
+    - chain-name: ethereum-testnet-sepolia
+      url: https://1rpc.io/sepolia
+    - chain-name: ethereum-mainnet
+      url: https://eth.llamarpc.com
+
+production-settings:
+  rpcs:
+    - chain-name: ethereum-testnet-sepolia
+      url: https://ethereum-sepolia-rpc.publicnode.com
+    - chain-name: ethereum-testnet-sepolia
+      url: https://ethereum-sepolia-public.nodies.app
+    - chain-name: ethereum-testnet-sepolia
+      url: https://1rpc.io/sepolia
+    - chain-name: ethereum-mainnet
+      url: https://eth.llamarpc.com

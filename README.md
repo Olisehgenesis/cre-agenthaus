@@ -80,6 +80,22 @@ Key pipeline:
 * Deterministic thresholds (peg deviation, reserve ratio, score, staleness).
 * Groq LLM decision to summarize anomalies and optionally block updates.
 
+## Demo narrative (for judges)
+
+* Cron trigger fires on schedule.
+* Workflow fetches PoR reserves (off‑chain) and token totals (on‑chain).
+* FeedOracle provides MiCA‑aligned risk signals and peg deviation metrics.
+* Deterministic safeguards run first (thresholds + staleness gates).
+* Groq summarizes anomalies and returns a JSON decision.
+* If risk is high or thresholds fail, on‑chain updates are blocked.
+
+## Why this matters (impact)
+
+* Enforces **automated risk monitoring** with auditable logs.
+* Combines **deterministic controls + AI reasoning** for safer execution.
+* Uses **regulated risk signals** (MiCA status, evidence-grade flags).
+* Prevents unsafe on‑chain updates when reserves or peg health degrade.
+
 ## Run the workflow
 
 ### 1) Install workflow dependencies

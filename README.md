@@ -101,8 +101,8 @@ Key pipeline:
 ### 1) Install workflow dependencies
 
 ```bash
-cd /Users/olisehgenesis/Desktop/Code/chainlink/agent-hause/erc8004
-/Users/olisehgenesis/.bun/bin/bun install
+cd ./agent-hause/erc8004
+bun install
 ```
 
 ### 2) Configure secrets (recommended)
@@ -121,11 +121,11 @@ secretsNames:
     - GROQ_API_KEY
 ```
 
-Then register your secrets (example):
+Then register your secrets via CRE:
 
 ```bash
-/Users/olisehgenesis/.cre/bin/cre secrets set FEEDORACLE_API_KEY
-/Users/olisehgenesis/.cre/bin/cre secrets set GROQ_API_KEY
+cre secrets set FEEDORACLE_API_KEY
+cre secrets set GROQ_API_KEY
 ```
 
 Optional if you want to broadcast or simulate signed writes:

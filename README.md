@@ -70,7 +70,7 @@ For more details on the commands, run `npx tsx cli.ts --help`.
 
 The CRE workflow lives in:
 
-* `/Users/olisehgenesis/Desktop/Code/chainlink/agent-hause/erc8004/main.ts`
+* `agent-hause/erc8004/main.ts`
 
 Key pipeline:
 
@@ -110,18 +110,7 @@ bun install
 Store API keys via CRE secrets and reference them in the workflow settings.
 The workflow already points to `../secrets.yaml`.
 
-Edit `/Users/olisehgenesis/Desktop/Code/chainlink/agent-hause/secrets.yaml`
-to include the secret names:
-
-```yaml
-secretsNames:
-  FEEDORACLE_API_KEY:
-    - FEEDORACLE_API_KEY
-  GROQ_API_KEY:
-    - GROQ_API_KEY
-```
-
-Then register your secrets via CRE:
+Register your secrets via CRE:
 
 ```bash
 cre secrets set FEEDORACLE_API_KEY
